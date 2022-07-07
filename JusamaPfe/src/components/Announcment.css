@@ -1,0 +1,50 @@
+.marquee {  
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(245,245,245,255);
+    color: black;
+    height: 35px;
+   }
+   .marqueeText {
+    display: flex;
+    width: 100%;
+    /* Starting position */
+    -moz-transform:translateX(0);
+    -webkit-transform:translateX(0);   
+    transform:translateX(0);
+    /* Apply animation to this element */  
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 13s linear infinite;
+   }
+   .marqueeText p {
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0;
+    line-height: 2.5;
+    text-align: center;
+   }
+   
+    
+
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%, 45%, 100% { -moz-transform: translateX(0); }
+    50%, 95% { -moz-transform: translateX(-100%); } 
+   }
+   @-webkit-keyframes scroll-left {
+    0%, 45%, 100% { -webkit-transform: translateX(0); }
+    50%, 95% { -webkit-transform: translateX(-100%); } 
+   }
+   @keyframes scroll-left {
+    0%, 45%, 100% { 
+    -moz-transform: translateX(0); /* Browser bug fix */
+    -webkit-transform: translateX(0); /* Browser bug fix */
+    transform: translateX(0);      
+    }
+     50%, 95% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%);      
+    }
+   }

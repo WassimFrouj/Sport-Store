@@ -1,0 +1,43 @@
+.headingB {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5fafd;
+    font-weight: 800;
+    top: 0px;
+    font-size: 3rem;
+    height: 400px;
+    
+
+   
+  }
+  .containerB{
+    margin-right:300px;
+    
+}
+  .lineB {
+    margin: 0 8px;
+    background: black;
+    height: 0;
+    width: 8px;
+    transition: all 1s ease;
+    margin-left: 400px;
+  }
+  
+  .lineonB {
+    height: 60px;
+  }
+  .titleB {
+    position: relative;
+    left:-20px;
+    opacity: 0;
+    color: black;
+    font-size: 130%;
+    font-weight: 800;
+    transition: all 0.8s ease;
+  }
+  .titleonB {
+    transform: translateX(30px);
+    opacity: 1;
+  }

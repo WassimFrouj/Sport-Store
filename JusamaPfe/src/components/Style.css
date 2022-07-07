@@ -1,0 +1,125 @@
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+
+  .gallery {
+    padding: 50px;
+    display: flex;
+  }
+  
+  .galleryItem {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .galleryImg {
+    width: 100%;
+  }
+  .newSeason {
+    display: flex;
+  }
+  
+  .nsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nsImg {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .nsTitle {
+    font-size: 40px;
+  }
+  
+  .nsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #nav-dropdown{
+   color:inherit;
+   text-decoration: none;
+}
+#nav-dropdownItem{
+  color:inherit;
+   text-decoration: none;
+}
+
+nav {
+  background-color: #111;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  height:10vh;
+  
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+  font-size: 100%;
+  
+  
+}
+.dropdown-toggle::after {
+  content: none;
+}
+
+ul{
+  
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #ffffff;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+.dropdown-menu{
+  
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swar%27');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.container
+{
+flex:1;
+margin: 5px;
+min-width: 280;
+height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: grey;
+
+}
+
+
+.body
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+
+
+.card
+{
+    position: absolute;
+    width: 420px;
+    height: 350px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    border-color: transparent;
+
+
+}
+
+.card .circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .circle::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245,245,245,255);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+
+.card:hover .circle:before
+{
+    background: #0065c3;
+    border-radius: 20px;
+    clip-path: circle(400px at center);
+}
+
+.card img
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+height: 300px;
+pointer-events: none;
+transition: 0.5s;
+
+}
+
+.card:hover img
+{
+    left: 75%;
+    height: 500px;
+
+}
+.card .content
+{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    margin-left: -200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden
+    ;
+}
+
+.card:hover .content
+{
+    left: 0 ;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.card .content p
+{
+color : rgb(187, 184, 184)
+
+}
+
+.card .content Button
+{
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    background: white;
+    color: #111;
+    margin-top: 10px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius:30px;
+    border: 1.5px solid transparent;
+    outline: none;
+    overflow: hidden;
+    filter: drop-shadow(0 2px 8px
+    rgba(black, 0.32));
+
+
+
+}
+
+@media (max-width: 991px)
+{
+    .container
+    {
+       display: none;
+    }
+    .card
+    {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        
+    }
+    .card:hover
+    {
+        height: 600px;
+
+    }
+    .card .content
+    {
+
+        width: 100%;
+        left: 0;
+        padding: 40px;
+
+    }
+    .card img 
+    {
+        top: 70%;
+        left: 50%;
+        height: 320px;
+
+    }
+}
+
+@media (max-width: 420px)
+{
+    .card .content 
+    {
+
+        padding: 20px;
+    }
+}
